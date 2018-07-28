@@ -1,0 +1,27 @@
+android-studio
+android-studio-preview-beta
+brew curl
+deezer
+figma
+firefox
+firefox-developer-edition
+font-cascadia-pl
+font-fira-code
+font-jetbrains-mono
+font-source-code-pro-for-powerline
+google-chrome
+google-chrome-canary
+iterm2
+lastpass
+macvim
+microsoft-edge
+microsoft-office
+microsoft-teams
+slack
+spectacle
+transmission
+visual-studio-code
+vivaldi
+vlc
+whatsapp
+zeplin

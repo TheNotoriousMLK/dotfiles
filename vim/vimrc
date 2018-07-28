@@ -1,0 +1,118 @@
+set shell=/bin/bash
+
+set nocompatible
+
+set nobackup
+set nowritebackup
+set noswapfile
+
+" close all folds when opening a new buffer
+autocmd BufRead * setlocal foldmethod=marker
+autocmd BufRead * normal zM
+
+filetype off
+
+" set the runtime path to include vundle and initialise
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" vundle plugins {{{
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'derekwyatt/vim-scala'
+
+Plugin 'scrooloose/syntastic'
+
+Plugin 'bling/vim-airline'
+
+Plugin 'Lokaltog/vim-easymotion'
+
+Plugin 'kien/ctrlp.vim'
+
+Plugin 'flazz/vim-colorschemes'
+
+Plugin 'dag/vim-fish'
+
+Plugin 'dracula/vim'
+" }}}
+
+" all of your plugins must be added before the following line
+call vundle#end()
+
+
+" set background=dark
+
+colorscheme dracula
+set guifont=Fira_Code:h14
+
+filetype plugin on
+"set nocompatible
+syntax on
+
+autocmd BufRead,BufNewFile *.scala,*.js,*.scss,*.html,*.ts,*.css setlocal shiftwidth=2 tabstop=2
+
+" Use the OS clipboard by default (on versions compiled with `+clipboard`)
+set clipboard=unnamed
+" Enhance command-line completion
+set wildmenu
+" Optimize for fast terminal connections
+set ttyfast
+" Add the g flag to search/replace by default
+set gdefault
+" Use UTF-8 without BOM
+set encoding=utf-8 nobomb
+" Enable mouse in all modes
+set mouse=a
+" Disable error bells
+set noerrorbells
+" Don’t reset cursor to start of line when moving around.
+set nostartofline
+" Show the filename in the window titlebar
+set title
+" Start scrolling three lines before the horizontal window border
+set scrolloff=3
+
+set backspace=indent,eol,start
+
+set autoindent
+
+set history=50
+
+set showcmd
+
+set tildeop
+
+set showmode
+
+set relativenumber
+set ruler
+
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+set wrapscan
+
+set autoread
+
+set shortmess+=I
+
+:imap jj <Esc>
+
+" syntastic settings
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_aggregate_errors = 1
+"let g:syntastic_cpp_clang_check_args = "-std=c++11"
+"let g:syntastic_cpp_clang_tidy_args = "-std=c++11"
+"let g:syntastic_cpp_checkers = ['clang_check'] ", 'clang_tidy']
+"let g:syntastic_scala_checkers = ['scalac'] ", 'fsc']
+
+" airline settings
+set laststatus=2
+let g:airline#extensions#tabline#enabled=1

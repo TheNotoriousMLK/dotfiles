@@ -1,0 +1,57 @@
+org.gnome.desktop.interface|gtk-theme|Flat-Remix-GTK-Red-Dark
+org.gnome.desktop.interface|icon-theme|Flat-Remix-Red
+org.gnome.desktop.privacy|old-files-age|1
+org.gnome.desktop.privacy|remember-recent-files|false
+org.gnome.desktop.privacy|remove-old-temp-files|true
+org.gnome.desktop.privacy|remove-old-trash-files|true
+org.gnome.desktop.privacy|report-technical-problems|false
+org.gnome.desktop.screensaver|lock-enabled|false
+org.gnome.desktop.session|idle-delay|0
+org.gnome.desktop.sound|event-sounds|false
+org.gnome.desktop.wm.keybindings|switch-applications|['<Alt>Tab']
+org.gnome.desktop.wm.keybindings|switch-applications-backward|['<Shift><Alt>Tab']
+org.gnome.desktop.wm.keybindings|switch-group|['<Super>Tab']
+org.gnome.desktop.wm.keybindings|switch-group-backward|['<Shift><Super>Tab']
+org.gnome.desktop.wm.preferences|button-layout|'appmenu:minimize,maximize,close'
+org.gnome.mutter|dynamic-workspaces|false
+org.gnome.mutter|workspaces-only-on-primary|false
+org.gnome.nautilus.desktop|home-icon-visible|true
+org.gnome.nautilus.desktop|network-icon-visible|false
+org.gnome.nautilus.desktop|volumes-visible|true
+org.gnome.nautilus.list-view|default-visible-columns|['name', 'size', 'date_modified_with_time']
+org.gnome.nautilus.list-view|use-tree-view|true
+org.gnome.nautilus.preferences|default-folder-viewer|'list-view'
+org.gnome.settings-daemon.peripherals.keyboard|numlock-state|'on'
+org.gnome.shell|enabled-extensions|['alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'pop-shop-details@system76.com', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com']
+org.gnome.shell|favorite-apps|['org.gnome.Nautilus.desktop', 'firefox-developer.desktop', 'vivaldi-stable.desktop', 'code_code.desktop', 'intellij-idea-community_intellij-idea-community.desktop']
+org.gnome.shell.extensions.dash-to-dock|apply-custom-theme|false
+org.gnome.shell.extensions.dash-to-dock|background-opacity|0.0
+org.gnome.shell.extensions.dash-to-dock|dock-position|'BOTTOM'
+org.gnome.shell.extensions.dash-to-dock|hot-keys|true
+org.gnome.shell.extensions.dash-to-dock|intellihide-mode|'ALL_WINDOWS'
+org.gnome.shell.extensions.dash-to-dock|isolate-monitors|true
+org.gnome.shell.extensions.dash-to-dock|isolate-workspaces|true
+org.gnome.shell.extensions.dash-to-dock|middle-click-action|'launch'
+org.gnome.shell.extensions.dash-to-dock|multi-monitor|true
+org.gnome.shell.extensions.dash-to-dock|require-pressure-to-show|false
+org.gnome.shell.extensions.dash-to-dock|shift-click-action|'minimize'
+org.gnome.shell.extensions.dash-to-dock|shift-middle-click-action|'launch'
+org.gnome.shell.extensions.dash-to-dock|show-show-apps-button|false
+org.gnome.shell.extensions.dash-to-dock|transparency-mode|'FIXED'
+org.gnome.shell.extensions.user-theme|name|Hooli
+org.gnome.system.locale|region|'en_CA.UTF-8'
+org.gnome.system.location|enabled|false
+org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/|background-transparency-percent|7
+org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/|font|'Fira Code 12'
+org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/|use-theme-colors|true
+org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/|use-theme-transparency|false
+org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/|use-transparent-background|true
+org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/|visible-name|'MLK'
+org.gnome.Terminal.ProfilesList|list|['b1dcc9dd-5262-4d8d-a863-c897e6d979b9']
+org.gnome.Terminal.ProfilesList|default|'b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
+org.gnome.Terminal.Legacy.Settings|theme-variant|'dark'
+org.gtk.Settings.FileChooser|date-format|'regular'
+org.gtk.Settings.FileChooser|location-mode|'path-bar'
+org.gtk.Settings.FileChooser|show-hidden|true
+org.gtk.Settings.FileChooser|show-size-column|true
+org.gtk.Settings.FileChooser|sidebar-width|172

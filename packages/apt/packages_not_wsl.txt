@@ -1,0 +1,13 @@
+firefox-dev
+flat-remix
+flat-remix-gnome
+flat-remix-gtk
+fonts-firacode
+fonts-powerline
+gnome-tweaks
+gnome-shell-extensions
+gnome-shell-extension-dashtodock
+libsecret-1-0
+libsecret-1-dev
+seahorse
+vivaldi-stable

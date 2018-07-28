@@ -1,0 +1,6 @@
+gitconfig.local
+
+.vimplugins
+vim/vim/bundle/*
+
+*.log

@@ -1,0 +1,7 @@
+build-essential
+apt-transport-https
+ca-certificates
+curl
+file
+snapd
+software-properties-common

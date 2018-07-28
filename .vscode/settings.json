@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "gitconfig.local": "properties",
+    "gitconfig.local.example": "properties",
+    "gitignore": "ignore",
+    "vimrc": "vimrc",
+  }
+}
