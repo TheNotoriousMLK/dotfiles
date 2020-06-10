@@ -46,6 +46,8 @@ If you would also like Homebrew to be updated during install then:
 ./install.sh --update-brew
 ```
 
+The first time `Brew` is installed, you will be required to reboot your machine.
+
 At any time, `packagees.txt` files can be updated and the `./install.sh` command run again. NB: This will not uninstall already installed packages.
 
 ## Configuration

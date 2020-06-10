@@ -9,6 +9,8 @@ APT_DIR=$PACKAGES_DIR/apt
 SNAP_DIR=$PACKAGES_DIR/snap
 BREW_DIR=$PACKAGES_DIR/brew
 
+BREW_INSTALLED=false
+
 UPDATE_BREW=false
 SKIP_BREW=false
 
@@ -43,6 +45,10 @@ install_packages() {
   brew_install_packages
   install_font_packages
   install_git_keyring
+  if [ $BREW_INSTALLED == "true" ]; then
+    echo "Brew has been installed and you will need to reboot."
+    do_reboot
+  fi
 }
 
 xcode_install_packages() {

@@ -41,3 +41,23 @@ is_success() {
     fail "$no"
   fi
 }
+
+do_reboot() {
+  if ! is_mac; then
+    if is_wsl; then
+      echo "You are running under WSL."
+      echo "All running WSL clients will now be shutdown."
+      echo "Press any key to continue."
+      wsl.exe --shutdown
+      read
+    else
+      echo "System needs to reboot. Press any key to continue."
+      read
+      reboot
+    fi
+  else
+    echo "System needs to reboot. Press any key to continue."
+    read
+    sudo shutdown -r now "Rebooting to update default shell to Fish."
+  fi
+}

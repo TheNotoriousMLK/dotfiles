@@ -99,6 +99,7 @@ configure_fish() {
   if command_exists fish; then
     local src=$FISH_DIR/omf
     local dst="$HOME/.config/omf"
+    mkdir -p $HOME/.config
     link_file "$src" "$dst"
     sh -c "$FISH_DIR/install_omf.fish"
     set_shell_fish
@@ -108,7 +109,7 @@ configure_fish() {
 set_shell_fish() {
   if [ "$(echo $SHELL)" != "/usr/local/bin/fish" ]; then
     info "The machine will need to be rebooted once the default shell is set."
-    if ! [ -e '/usr/local/bin/fish' ]; then
+    if [ ! -e '/usr/local/bin/fish' ]; then
       sudo ln -s "$(which fish)" /usr/local/bin/fish
     fi
     if ! (cat /etc/shells | grep -q fish); then
@@ -122,26 +123,6 @@ set_shell_fish() {
     is_success "Default shell changed to fish" \
       "Default shell could not be changed to fish"
     do_reboot
-  fi
-}
-
-do_reboot() {
-  if ! is_mac; then
-    if is_wsl; then
-      echo "You are running under WSL."
-      echo "All running WSL clients will now be shutdown."
-      echo "Press any key to continue."
-      wsl.exe --shutdown
-      read
-    else
-      echo "System needs to reboot. Press any key to continue."
-      read
-      reboot
-    fi
-  else
-    echo "System needs to reboot. Press any key to continue."
-    read
-    sudo shutdown -r now "Rebooting to update default shell to Fish."
   fi
 }
 
