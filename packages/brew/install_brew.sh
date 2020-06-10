@@ -11,6 +11,8 @@ install_brew() {
       && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
     test -r ~/.bash_profile \
       && echo "$($(brew --prefix)/bin/brew shellenv)" >> ~/.bash_profile
+    test -r ~/.bashrc \
+      && echo "$($(brew --prefix)/bin/brew shellenv)" >> ~/.bashrc
     echo "$($(brew --prefix)/bin/brew shellenv)" >> ~/.profile
   fi
 }
