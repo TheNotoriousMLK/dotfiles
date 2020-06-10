@@ -69,6 +69,13 @@ This repo uses [Powerline Go](https://github.com/justjanne/powerline-go) for its
 ### GNOME Settings
 Gnome settings are stored under [settings.txt](gnome/settings.txt). Each setting is separated into its parts via `|` character. All settings are set using the `gsettings` command. Edit as necessary.
 
+### OMF
+`OMF` plugins can be added to [bundle](fish/omf/bundle) file. They are of the form `package package-name` and `theme theme-name`. If you would like to use a specific theme, change the file [theme](fish/omf/theme) and remove the `fish_prompt` and `fish_right_prompt` functions from [init.fish](fish/omf/init.fish). All changes to OMF must be done prior to `./configure.sh` being run. If you do so afterwards run the following:
+
+```fish
+omf installl
+```
+
 ## Inspiration
 Some inspiration for these dotfiles was taken from:
 

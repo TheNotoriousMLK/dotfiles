@@ -48,8 +48,8 @@ do_reboot() {
       echo "You are running under WSL."
       echo "All running WSL clients will now be shutdown."
       echo "Press any key to continue."
-      wsl.exe --shutdown
       read
+      wsl.exe --shutdown
     else
       echo "System needs to reboot. Press any key to continue."
       read

@@ -101,7 +101,6 @@ configure_fish() {
     local dst="$HOME/.config/omf"
     mkdir -p $HOME/.config
     link_file "$src" "$dst"
-    sh -c "$FISH_DIR/install_omf.fish"
     set_shell_fish
   fi
 }
@@ -111,6 +110,7 @@ set_shell_fish() {
     info "The machine will need to be rebooted once the default shell is set."
     if [ ! -e '/usr/local/bin/fish' ]; then
       sudo ln -s "$(which fish)" /usr/local/bin/fish
+      sh -c "$FISH_DIR/install_omf.fish"
     fi
     if ! (cat /etc/shells | grep -q fish); then
       sudo sh -c 'echo "/usr/local/bin/fish" >> /etc/shells'
