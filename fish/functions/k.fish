@@ -1,3 +1,3 @@
-function kube
+function k
     command kubectl $argv
 end

@@ -14,7 +14,7 @@ install_fonts() {
 }
 
 install_jetbrains_mono() {
-  local ver="1.0.6"
+  local ver="2.242"
   local file="$FONTS_DIR/fonts.zip"
   local out="$HOME/.local/share/fonts"
   local any_out="$out/JetBrainsMono-*"
@@ -40,9 +40,9 @@ install_jetbrains_mono() {
 }
 
 install_cascadia_code() {
-  local ver="2005.15"
+  local ver="2111.01"
   local file="$FONTS_DIR/fonts.zip"
-  local out="$HOME/.local/share/fonts/CascadiaCode_"
+  local out="$HOME/.local/share/fonts/CascadiaCode-"
   local any_out="$out*"
   local out_dir="$out$ver"
 
@@ -54,7 +54,7 @@ install_cascadia_code() {
     fi
 
     curl -Lo $file \
-      "https://github.com/microsoft/cascadia-code/releases/download/v$ver/CascadiaCode_$ver.zip"
+      "https://github.com/microsoft/cascadia-code/releases/download/v$ver/CascadiaCode-$ver.zip"
     if [ ! -d "$out_dir" ]; then
       mkdir -p $out_dir
     fi

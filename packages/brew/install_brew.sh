@@ -2,7 +2,7 @@ install_brew() {
   if ! command_exists brew; then
     info "Installing Brew"
     /bin/bash -c \
-      "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+      "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     success "Brew installed"
 
     BREW_INSTALLED=true

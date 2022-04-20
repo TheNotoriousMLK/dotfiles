@@ -1,6 +1,9 @@
 [include]
 	path = ~/.gitconfig.local
 
+[init]
+	defaultBranch = main
+
 [core]
 	editor = vim
 	autocrlf = false
@@ -31,7 +34,7 @@
 	bn = checkout -b
 	bd = branch -d
 	me = merge
-	s = show
+	sh = show
 	sf = show --name-only
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -137,6 +140,15 @@
 	default = simple
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
+
+[branch]
+	autosetuprebase = always
+
+[pull]
+	rebase = preserve
+
+[fetch]
+	prune = true
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f

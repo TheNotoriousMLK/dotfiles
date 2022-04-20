@@ -16,10 +16,10 @@ brew_add_pkg() {
   if ! brew_is_installed $pkg; then
     if [ -z $opts ]; then
       brew install $pkg > /dev/null 2> error.log
-      is_success "$pkg is installed" "$pkg failed to install (brew)"
+      is_success "$pkg installed" "$pkg failed to install (brew)"
     else
       eval "brew install $pkg $opts" > /dev/null 2> error.log
-      is_success "$pkg is installed" "$pkg failed to install (brew)"
+      is_success "$pkg installed" "$pkg failed to install (brew)"
     fi
   fi
 }
